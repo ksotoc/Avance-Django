@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} INICIO {% endblock %}
+
+{% block content %}
+
+    <h1>Bienvenido</h1>
+    <p>Esta es la pagina de inicio</p>
+    <ul>
+        {% for link in links %}
+            <li><a href=" {{ link.url }} "> {{ link.texto }} </a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

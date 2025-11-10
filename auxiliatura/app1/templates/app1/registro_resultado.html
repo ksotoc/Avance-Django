@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %} Formulario Registro - Resultado{% endblock %}
+
+{% block content %}
+
+    {% if nombre_completo %}
+    
+    <h2>Formulario de registro (En una sola vista) - Resultado</h2>
+    <hr>
+    <div>
+        <h3>Datos enviados</h3>
+        <p><strong>Nombre completo: </strong> {{ nombre_completo }} </p>
+        <p><strong>Fecha nacimiento: </strong> {{ fecha_nac }} </p>
+        <p><strong>Ci: </strong> {{ ci }} </p>
+        <p><strong>Correo: </strong> {{ correo }} </p>
+        <p><strong>Telefono: </strong> {{ telefono }} </p>
+    </div>
+
+    {% endif %}
+
+{% endblock %}
