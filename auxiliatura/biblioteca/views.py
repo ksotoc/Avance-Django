@@ -9,7 +9,7 @@ def listar_estudiantes(request):
                   {'estudiantes': estudiantes})
     
 def listar_libros(request):
-    estudiantes = Libro.objects.all().order_by('id_libro')
+    libros = Libro.objects.all().order_by('id_libro')
     
     return render(request, 'biblioteca/listar_estudiantes.html', 
-                  {'estudiantes': estudiantes})
+                  {'libros': libros})
